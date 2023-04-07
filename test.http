@@ -1,0 +1,46 @@
+POST http://127.0.0.1:8002/api/v1/authentications/jwt/  HTTP/1.1
+content-type: application/json
+x-application: f965537e-04f1-4cd9-b8d8-8ebbb3db6e52
+x-api-key: 0D1BAUZu.Pd0k7GyHbQ7ZVjmDEWQJFFcb7RrXolxs
+
+{
+    "username": "discuss_admin",
+    "password": "admin"
+}
+
+
+###
+
+GET http://127.0.0.1:8002/api/v1/discuss/?object_id=1111 HTTP/1.1
+content-type: application/json
+x-application: f965537e-04f1-4cd9-b8d8-8ebbb3db6e52
+x-api-key: 0D1BAUZu.Pd0k7GyHbQ7ZVjmDEWQJFFcb7RrXolxs
+
+###
+
+GET http://127.0.0.1:8002/api/v1/discuss/92c32733-79d1-41ab-8546-862a6df8aa8e/ HTTP/1.1
+content-type: application/json
+x-application: f965537e-04f1-4cd9-b8d8-8ebbb3db6e52
+x-api-key: 0D1BAUZu.Pd0k7GyHbQ7ZVjmDEWQJFFcb7RrXolxs
+
+###
+
+GET http://127.0.0.1:8002/api/v1/discuss/92c32733-79d1-41ab-8546-862a6df8aa8e/childrens/ HTTP/1.1
+content-type: application/json
+x-application: f965537e-04f1-4cd9-b8d8-8ebbb3db6e52
+x-api-key: 0D1BAUZu.Pd0k7GyHbQ7ZVjmDEWQJFFcb7RrXolxs
+
+###
+
+POST http://127.0.0.1:8002/api/v1/discuss/?object_id=1111 HTTP/1.1
+content-type: application/json
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg4NDI1NDA1LCJpYXQiOjE2ODA2NDk0MDUsImp0aSI6IjdjNjk4MDU3ZGIzZTQ0ZWRhYWZjNzMzZGUyZTQ5ZjI2IiwidXNlcl9pZCI6IjM2ZGMyNWU3LWI2ZTYtNDZlMC1hZTJmLWE1ZGI3YzU5YzU2NCJ9.wdeZIn9L7NW8hB9qSjyCRREwraq4eaLmWI0slPxmA7A
+x-application: f965537e-04f1-4cd9-b8d8-8ebbb3db6e52
+x-api-key: 0D1BAUZu.Pd0k7GyHbQ7ZVjmDEWQJFFcb7RrXolxs
+
+{
+    "parent": "92c32733-79d1-41ab-8546-862a6df8aa8e",
+    "content": "comment reply"
+}
+
+###

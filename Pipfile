@@ -1,0 +1,40 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-allauth = "*"
+django-celery-beat = "*"
+django-celery-results = "*"
+django-cleanup = "*"
+django-coreplus = "*"
+django-cors-headers = "*"
+django-debug-toolbar = "*"
+django-environ = "*"
+django-filter = "*"
+django-mptt = "*"
+django-redis = "*"
+djangorestframework = "*"
+djangorestframework-simplejwt = "*"
+djangorestframework-api-key = "*"
+drf-spectacular = "*"
+drf-spectacular-sidecar = "*"
+easy-thumbnails = "*"
+gunicorn = "*"
+psycopg2 = "*"
+celery = "*"
+
+[dev-packages]
+black = {extras = [ "jupyter",]}
+coverage = "*"
+docutils = "*"
+flake8 = "*"
+flake8-debugger = "*"
+ipython = "*"
+isort = "*"
+pre-commit = "*"
+
+[requires]
+python_version = "3.8"
