@@ -4,12 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+django = ">=4.2.0"
+celery = "*"
+corepluslib = "*"
 django-allauth = "*"
 django-celery-beat = "*"
 django-celery-results = "*"
 django-cleanup = "*"
-django-coreplus = "*"
 django-cors-headers = "*"
 django-debug-toolbar = "*"
 django-environ = "*"
@@ -24,7 +25,7 @@ drf-spectacular-sidecar = "*"
 easy-thumbnails = "*"
 gunicorn = "*"
 psycopg2 = "*"
-celery = "*"
+
 
 [dev-packages]
 black = {extras = [ "jupyter",]}

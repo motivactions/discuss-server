@@ -1,4 +1,4 @@
-from server import hooks
+from coreplus import hooks
 
 
 @hooks.register("API_V1_URL_PATTERNS")

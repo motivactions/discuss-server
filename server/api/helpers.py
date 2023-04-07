@@ -8,7 +8,7 @@ from rest_framework.exceptions import ValidationError as DRFValidationError
 from rest_framework.routers import DefaultRouter
 from rest_framework.views import APIView, api_settings
 from rest_framework.views import exception_handler as drf_exception_handler
-from server import hooks
+from coreplus import hooks
 
 DRF_NON_FIELD_ERRORS = api_settings.NON_FIELD_ERRORS_KEY
 
